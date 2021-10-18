@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import './Fonts/Montserrat.css';
 
 const GlobalStyles = createGlobalStyle`
 	* {
