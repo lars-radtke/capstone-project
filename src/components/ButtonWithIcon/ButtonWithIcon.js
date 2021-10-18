@@ -24,7 +24,7 @@ export const ButtonWithIcon = ({
 const ButtonSpacer = styled.div`
     display: inline-block;
 
-    padding-top: 24px;
+    padding-top: 48px;
 `;
 
 const Click = styled.button`
