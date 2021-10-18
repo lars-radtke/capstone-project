@@ -1,10 +1,11 @@
-import { Logo } from 'components';
+import { Logo, Login } from 'components';
 import styled from 'styled-components/macro';
 
-export const Frontpage = () => {
+export const Frontpage = onSubmit => {
     return (
         <Page>
             <Logo />
+            <Login onSubmit={onSubmit} />
         </Page>
     );
 };
