@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './Logo';
+import { Logo } from 'components';
 
 export default {
     title: 'Components/Logo',

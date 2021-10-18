@@ -31,6 +31,40 @@ const GlobalStyles = createGlobalStyle`
 	#root {
 		height: 100%;
 	}
+
+	button {
+		border: none;
+
+		font-size: 16px;
+		font-weight: 500;
+		white-space: nowrap;
+		color: var(--black);
+
+		opacity: ${({ disabled }) => (disabled ? '0.3' : '1')};
+		pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
+
+		transition: 0.3s;
+
+		background-color: ${({ highlightend }) =>
+            highlightend ? 'var(--red)' : 'var(--grey)'};
+		box-shadow: 0 6px 8px rgba(0,0,0,0.25);
+		transform: translateY(-4px);
+
+		&:hover {
+			background-color: ${({ highlighted }) =>
+                highlighted ? 'var(--red)' : 'var(--white)'};
+			box-shadow: 0 14px 10px rgba(0,0,0,0.1);
+			transform: translateY(-12px);
+		}
+		
+		&:active {
+			background-color: ${({ highlighted }) =>
+                highlighted ? 'var(--white)' : 'var(--black)'};
+			box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+			transform: translateY(0px);
+			transition: 0.1s;
+		}
+	}
 `;
 
 export default GlobalStyles;
