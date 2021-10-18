@@ -1,3 +1,5 @@
+import { Frontpage } from 'pages';
+
 export const App = () => {
-    return <>App</>;
+    return <Frontpage />;
 };
