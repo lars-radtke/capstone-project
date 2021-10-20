@@ -4,14 +4,14 @@ export const ButtonWithIcon = ({
     icon,
     text,
     highlightend,
-    disabled,
+    inactive,
     action,
 }) => {
     return (
         <ButtonSpacer>
             <Click
                 highlightend={highlightend}
-                disabled={disabled}
+                inactive={inactive}
                 onClick={action}
             >
                 <img src={icon} alt="" />
@@ -34,4 +34,7 @@ const Click = styled.button`
     grid-template-columns: 24px auto;
     gap: 18px;
     align-items: center;
+
+    opacity: ${({ inactive }) => (inactive ? '0.3' : '1')};
+    pointer-events: ${({ inactive }) => (inactive ? 'none' : 'auto')};
 `;
