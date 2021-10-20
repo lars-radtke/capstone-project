@@ -101,8 +101,8 @@ const IconButton = styled.div`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-image: ${({ showPassword }) =>
-        showPassword
+    background-image: ${({ icon }) =>
+        icon
             ? 'url("/assets/icons/visibility_off.svg")'
             : 'url("/assets/icons/visibility.svg")'};
 `;
