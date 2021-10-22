@@ -1,9 +1,13 @@
 import styled from 'styled-components/macro';
 import { useEffect, useState } from 'react';
-import { TextInput, ButtonWithIcon, PasswordInput } from 'components';
+import {
+    TextInput,
+    ButtonWithIcon,
+    PasswordInput,
+    InputNotice,
+} from 'components';
 
-export const Login = ({ loginHandler }) => {
-    const dataNotFound = false;
+export const Login = ({ handleLogin }) => {
     const [nameFilled, setNameFilled] = useState(false);
     const [nameWrongFormat, setNameWrongFormat] = useState(false);
     const [passwordWrongLength, setPasswordWrongLength] = useState(false);
@@ -29,13 +33,9 @@ export const Login = ({ loginHandler }) => {
 
     const focusOutPassword = event => {
         const input = event.target.value;
-        if (input.length >= 6) {
-            setPasswordFilled(true);
-            setPasswordWrongLength(false);
-        } else {
-            setPasswordFilled(false);
-            setPasswordWrongLength(true);
-        }
+        const inputIsValid = input.length >= 6;
+        setPasswordFilled(inputIsValid);
+        setPasswordWrongLength(!inputIsValid);
     };
 
     useEffect(() => {
@@ -48,32 +48,37 @@ export const Login = ({ loginHandler }) => {
 
     return (
         <>
-            <Form onSubmit={event => loginHandler(event)}>
+            <Form onSubmit={handleLogin}>
                 <TextInput
                     label="Benutzername"
                     name="name"
                     placeholder="max.musterschueler@klasse"
                     focusOut={focusOutName}
-                    dataNotFound={dataNotFound}
-                    error={nameWrongFormat}
-                    errorText="Deine Eingabe entspricht nicht dem gültigen Format."
-                    helpText="Beispiel: max.musterschueler@klasse"
                 />
+                {nameWrongFormat && (
+                    <InputNotice
+                        errorText="Deine Eingabe entspricht nicht dem gültigen Format."
+                        helpText="Beispiel: max(dot)musterschueler(at)klasse"
+                    />
+                )}
                 <PasswordInput
                     label="Passwort"
                     type="password"
                     name="password"
                     placeholder="SuperSicheresPasswort"
                     focusOut={focusOutPassword}
-                    dataNotFound={dataNotFound}
-                    error={passwordWrongLength}
-                    errorText="Deine Eingabe entspricht nicht der gültigen Mindestlänge."
-                    helpText="Das Passwort muss aus mindestens 6 Zeichen bestehen."
                 />
+                {passwordWrongLength && (
+                    <InputNotice
+                        passwordWrongLength
+                        errorText="Deine Eingabe entspricht nicht der gültigen Mindestlänge."
+                        helpText="Das Passwort muss aus mindestens 6 Zeichen bestehen."
+                    />
+                )}
             </Form>
             <Wrapper>
                 <ButtonWithIcon
-                    icon="/assets/icons/login.svg"
+                    iconSrc="/assets/icons/login.svg"
                     text="Anmelden"
                     inactive={inactive}
                 />
@@ -84,6 +89,7 @@ export const Login = ({ loginHandler }) => {
 
 const Form = styled.form`
     width: 100%;
+    margin-top: 30px;
 `;
 
 const Wrapper = styled.div`
