@@ -1,20 +1,20 @@
 import styled from 'styled-components/macro';
 
-export const InputNotice = ({ error, errorText, helpText }) => {
+export const InputNotice = ({ errorText, helpText }) => {
     return (
-        <Wrapper error={error}>
-            <Grid>
-                <img src="/assets/icons/warning.svg" alt="Warning:" />
-                <ErrorMessage>{errorText}</ErrorMessage>
-            </Grid>
+        <Div>
+            <img src="/assets/icons/warning.svg" alt="Warnung" />
+            <ErrorMessage>{errorText}</ErrorMessage>
             <HelpText>{helpText}</HelpText>
-        </Wrapper>
+        </Div>
     );
 };
 
-const Wrapper = styled.div`
-    grid-template-rows: auto auto;
+const Div = styled.div`
+    display: grid;
+    grid-template-columns: 24px auto;
     gap: 10px;
+    align-items: center;
 
     border: 1px solid var(--red);
 
@@ -23,15 +23,6 @@ const Wrapper = styled.div`
     color: var(--red);
 
     margin-bottom: 25px;
-
-    display: ${({ error }) => (error ? 'grid' : 'none')};
-`;
-
-const Grid = styled.div`
-    display: grid;
-    grid-template-columns: 24px 1fr;
-    gap: 10px;
-    align-items: center;
 `;
 
 const ErrorMessage = styled.p`
@@ -40,6 +31,8 @@ const ErrorMessage = styled.p`
 `;
 
 const HelpText = styled.p`
+    grid-column: 1 / -1;
+
     font-style: italic;
     font-weight: 200;
     font-size: 16px;
