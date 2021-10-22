@@ -1,40 +1,33 @@
 import styled from 'styled-components/macro';
 
 export const ButtonWithIcon = ({
-    icon,
+    iconSrc,
     text,
     highlightend,
     inactive,
-    action,
+    onClick,
 }) => {
     return (
-        <ButtonSpacer>
-            <Click
-                highlightend={highlightend}
-                inactive={inactive}
-                onClick={action}
-            >
-                <img src={icon} alt="" />
-                {text}
-            </Click>
-        </ButtonSpacer>
+        <Button
+            highlightend={highlightend}
+            disabled={inactive}
+            onClick={onClick}
+        >
+            <img src={iconSrc} alt="" />
+            {text}
+        </Button>
     );
 };
 
-const ButtonSpacer = styled.div`
-    display: inline-block;
-
-    padding-top: 48px;
-`;
-
-const Click = styled.button`
+const Button = styled.button`
     padding: 10px 20px 10px 18px;
+    margin-top: 18px;
 
     display: grid;
     grid-template-columns: 24px auto;
     gap: 18px;
     align-items: center;
 
-    opacity: ${({ inactive }) => (inactive ? '0.3' : '1')};
-    pointer-events: ${({ inactive }) => (inactive ? 'none' : 'auto')};
+    opacity: ${({ disabled }) => (disabled ? '0.3' : '1')};
+    pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
 `;
