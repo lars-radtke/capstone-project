@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styled from 'styled-components/macro';
-import { InputNotice } from 'components';
 
 export const PasswordInput = ({
     label,
@@ -8,9 +7,6 @@ export const PasswordInput = ({
     placeholder,
     focusOut,
     dataNotFound,
-    error,
-    errorText,
-    helpText,
 }) => {
     const [showPassword, setShowPassword] = useState(false);
     const [inputType, setInputType] = useState('password');
@@ -35,7 +31,6 @@ export const PasswordInput = ({
                     name={name}
                     placeholder={placeholder}
                     onBlur={event => focusOut(event)}
-                    error={error}
                     dataNotFound={dataNotFound}
                     required
                 ></Input>
@@ -44,11 +39,6 @@ export const PasswordInput = ({
                     onClick={event => togglePasswordVisibility(event)}
                 />
             </Label>
-            <InputNotice
-                error={error}
-                errorText={errorText}
-                helpText={helpText}
-            />
         </>
     );
 };
@@ -60,7 +50,7 @@ const Label = styled.label`
     position: relative;
 
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
 
     border-bottom: 1px solid var(--black);
 
@@ -73,12 +63,12 @@ const Input = styled.input`
     padding: 10px 0;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 
     background: none;
 
     &::placeholder {
-        font-weight: 200;
+        font-weight: 400;
         opacity: 0.3;
     }
 

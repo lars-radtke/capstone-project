@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import { InputNotice } from 'components';
 
 export const TextInput = ({
     label,
@@ -7,9 +6,6 @@ export const TextInput = ({
     placeholder,
     focusOut,
     dataNotFound,
-    error,
-    errorText,
-    helpText,
 }) => {
     return (
         <>
@@ -21,16 +17,10 @@ export const TextInput = ({
                     name={name}
                     placeholder={placeholder}
                     onBlur={event => focusOut(event)}
-                    error={error}
                     dataNotFound={dataNotFound}
                     required
                 ></Input>
             </Label>
-            <InputNotice
-                error={error}
-                errorText={errorText}
-                helpText={helpText}
-            />
         </>
     );
 };
@@ -40,7 +30,7 @@ const Label = styled.label`
     width: 100%;
 
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
 
     border-bottom: 1px solid var(--black);
 
@@ -53,16 +43,14 @@ const Input = styled.input`
     padding: 10px 0;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 
     background: none;
 
     &::placeholder {
-        font-weight: 200;
+        font-weight: 400;
         opacity: 0.3;
     }
 
     border: none;
-
-    color: ${({ error }) => (error ? 'var(--red)' : 'var(--black)')};
 `;
