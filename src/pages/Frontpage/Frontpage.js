@@ -10,7 +10,7 @@ export const Frontpage = ({ authenticateUser }) => {
         event.preventDefault();
         const { name, password } = event.target.elements;
 
-        const user = data.filter(
+        const user = data.find(
             user =>
                 user.login === name.value && user.password === password.value,
         );
@@ -24,14 +24,14 @@ export const Frontpage = ({ authenticateUser }) => {
     };
 
     return (
-        <Page>
+        <Section>
             <Logo />
             <Login handleLogin={handleLogin} dataNotFound={dataNotFound} />
-        </Page>
+        </Section>
     );
 };
 
-const Page = styled.section`
+const Section = styled.section`
     height: 100%;
     padding: 50px;
 
