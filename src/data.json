@@ -4,7 +4,7 @@
         "login": "ben.orf@hh-web-21-5",
         "firstname": "Ben",
         "lastname": "Orf",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -12,7 +12,7 @@
         "login": "danilo.braeuer@hh-web-21-5",
         "firstname": "Danilo",
         "lastname": "Braeuer",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -20,7 +20,7 @@
         "login": "emilie.lokietz@hh-web-21-5",
         "firstname": "Emilie",
         "lastname": "Lokietz",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -28,7 +28,7 @@
         "login": "fabian.hanso@hh-web-21-5",
         "firstname": "Fabian",
         "lastname": "Hanso",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -36,7 +36,7 @@
         "login": "falk.kreimeier@hh-web-21-5",
         "firstname": "Falk",
         "lastname": "Kreimeier",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -44,7 +44,7 @@
         "login": "julien.chahine@hh-web-21-5",
         "firstname": "Julien",
         "lastname": "Chahine",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -52,7 +52,7 @@
         "login": "lars.radtke@hh-web-21-5",
         "firstname": "Lars",
         "lastname": "Radtke",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -60,7 +60,7 @@
         "login": "malte.scherdin@hh-web-21-5",
         "firstname": "Malte",
         "lastname": "Scherdin",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -68,7 +68,7 @@
         "login": "mareike.boselmann@hh-web-21-5",
         "firstname": "Mareike",
         "lastname": "Boselmann",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -76,7 +76,7 @@
         "login": "martin.haiss@hh-web-21-5",
         "firstname": "Martin",
         "lastname": "Haiss",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -84,7 +84,7 @@
         "login": "sarah.schuessler@hh-web-21-5",
         "firstname": "Sarah",
         "lastname": "Schuessler",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -92,7 +92,7 @@
         "login": "sascha.collinet@hh-web-21-5",
         "firstname": "Sascha",
         "lastname": "Collinet",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -100,7 +100,7 @@
         "login": "stefan.behring@hh-web-21-5",
         "firstname": "Stefan",
         "lastname": "Behring",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -108,7 +108,7 @@
         "login": "suad.umar@hh-web-21-5",
         "firstname": "Suad",
         "lastname": "Umar",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     },
     {
@@ -116,7 +116,7 @@
         "login": "timur.buchberger@hh-web-21-5",
         "firstname": "Timur",
         "lastname": "Buchberger",
-        "class": "hh-web-21-5",
+        "groups": ["hh-web-21-5"],
         "password": "1234567890"
     }
 ]
