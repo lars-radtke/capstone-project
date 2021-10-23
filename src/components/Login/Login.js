@@ -25,6 +25,9 @@ export const Login = ({ handleLogin, dataNotFound }) => {
         ) {
             setNameFilled(true);
             setNameWrongFormat(false);
+        } else if (input === '') {
+            setNameFilled(false);
+            setNameWrongFormat(false);
         } else {
             setNameFilled(false);
             setNameWrongFormat(true);
@@ -33,9 +36,16 @@ export const Login = ({ handleLogin, dataNotFound }) => {
 
     const focusOutPassword = event => {
         const input = event.target.value;
-        const inputIsValid = input.length >= 6;
-        setPasswordFilled(inputIsValid);
-        setPasswordWrongLength(!inputIsValid);
+        if (input === '') {
+            setPasswordFilled(false);
+            setPasswordWrongLength(false);
+        } else if (input >= 6) {
+            setPasswordFilled(true);
+            setPasswordWrongLength(false);
+        } else {
+            setPasswordFilled(false);
+            setPasswordWrongLength(true);
+        }
     };
 
     useEffect(() => {
