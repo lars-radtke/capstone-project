@@ -4,19 +4,19 @@ import styled from 'styled-components/macro';
 
 export const Dashboard = ({ user, logoutUser }) => {
     document.title = 'Dashboard | Student Compass';
-    const { firstname, lastname, groups } = user;
-    const [greeting, setGreeting] = useState(`Hallo ${firstname}.`);
+    const { firstname } = user;
+    const [greeting, setGreeting] = useState('Hallo ');
 
     useEffect(() => {
         const interval = setInterval(() => {
             const currentTime = new Date();
             const currentHour = currentTime.getHours();
             if (currentHour <= 8) {
-                setGreeting(`Guten Morgen, ${firstname}.`);
+                setGreeting('Guten Morgen, ');
             } else if (currentHour > 8 && currentHour <= 16) {
-                setGreeting(`Hallo ${firstname}.`);
+                setGreeting('Hallo ');
             } else {
-                setGreeting(`Guten Abend, ${firstname}.`);
+                setGreeting('Guten Abend, ');
             }
         }, 1000);
         return () => {
@@ -26,7 +26,10 @@ export const Dashboard = ({ user, logoutUser }) => {
 
     return (
         <Section>
-            {greeting}
+            <p>
+                {greeting}
+                {firstname}.
+            </p>
             <Wrapper>
                 <ButtonWithIcon
                     iconSrc="/assets/icons/logout.svg"
