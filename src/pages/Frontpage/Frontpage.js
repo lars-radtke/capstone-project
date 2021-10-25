@@ -3,7 +3,7 @@ import data from '../../data.json';
 import styled from 'styled-components/macro';
 import { useState } from 'react';
 
-export const Frontpage = ({ authenticateUser }) => {
+export const Frontpage = ({ onAuthenticateUser }) => {
     const [dataNotFound, setDataNotFound] = useState(false);
 
     const handleLogin = event => {
@@ -17,7 +17,7 @@ export const Frontpage = ({ authenticateUser }) => {
 
         if (user.length !== 0) {
             setDataNotFound(false);
-            authenticateUser(user);
+            onAuthenticateUser(user);
         } else {
             setDataNotFound(true);
         }
@@ -26,7 +26,7 @@ export const Frontpage = ({ authenticateUser }) => {
     return (
         <Section>
             <Logo />
-            <Login handleLogin={handleLogin} dataNotFound={dataNotFound} />
+            <Login onLogin={handleLogin} dataNotFound={dataNotFound} />
         </Section>
     );
 };

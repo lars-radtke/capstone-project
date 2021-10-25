@@ -11,7 +11,7 @@ export const App = () => {
 
     const userIsAuthenticated = user.length !== 0;
 
-    const authenticateUser = array => {
+    const handleAuthenticateUser = array => {
         localStorage.setItem('user', JSON.stringify(array));
         setUser(array);
     };
@@ -28,7 +28,7 @@ export const App = () => {
                 {userIsAuthenticated ? (
                     <Redirect to="/dashboard" />
                 ) : (
-                    <Frontpage authenticateUser={authenticateUser} />
+                    <Frontpage onAuthenticateUser={handleAuthenticateUser} />
                 )}
             </Route>
             <Route path="/dashboard">

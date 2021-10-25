@@ -7,7 +7,7 @@ import {
     ButtonWithIcon,
 } from 'components';
 
-export const Login = ({ handleLogin, dataNotFound }) => {
+export const Login = ({ onLogin, dataNotFound }) => {
     const [nameFilled, setNameFilled] = useState(false);
     const [nameWrongFormat, setNameWrongFormat] = useState(false);
     const [passwordWrongLength, setPasswordWrongLength] = useState(false);
@@ -49,16 +49,20 @@ export const Login = ({ handleLogin, dataNotFound }) => {
     };
 
     useEffect(() => {
-        if (nameFilled === true && passwordFilled === true) {
-            setInactive(false);
-        } else {
-            setInactive(true);
-        }
+        setInactive(!(nameFilled && passwordFilled));
     }, [passwordFilled, nameFilled]);
+
+    // useEffect(() => {
+    //     if (nameFilled === true && passwordFilled === true) {
+    //         setInactive(false);
+    //     } else {
+    //         setInactive(true);
+    //     }
+    // }, [passwordFilled, nameFilled]);
 
     return (
         <>
-            <Form onSubmit={handleLogin}>
+            <Form onSubmit={onLogin}>
                 {dataNotFound && (
                     <InputNotice
                         errorText="Wir konnten die gesuchte Person nicht finden."
