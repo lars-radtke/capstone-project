@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "login": "ben.orf@hh-web-21-5",
+        "firstname": "Ben",
+        "lastname": "Orf",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 2,
+        "login": "danilo.braeuer@hh-web-21-5",
+        "firstname": "Danilo",
+        "lastname": "Braeuer",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 3,
+        "login": "emilie.lokietz@hh-web-21-5",
+        "firstname": "Emilie",
+        "lastname": "Lokietz",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 4,
+        "login": "fabian.hanso@hh-web-21-5",
+        "firstname": "Fabian",
+        "lastname": "Hanso",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 5,
+        "login": "falk.kreimeier@hh-web-21-5",
+        "firstname": "Falk",
+        "lastname": "Kreimeier",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 6,
+        "login": "julien.chahine@hh-web-21-5",
+        "firstname": "Julien",
+        "lastname": "Chahine",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 7,
+        "login": "lars.radtke@hh-web-21-5",
+        "firstname": "Lars",
+        "lastname": "Radtke",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 8,
+        "login": "malte.scherdin@hh-web-21-5",
+        "firstname": "Malte",
+        "lastname": "Scherdin",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 9,
+        "login": "mareike.boselmann@hh-web-21-5",
+        "firstname": "Mareike",
+        "lastname": "Boselmann",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 10,
+        "login": "martin.haiss@hh-web-21-5",
+        "firstname": "Martin",
+        "lastname": "Haiss",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 11,
+        "login": "sarah.schuessler@hh-web-21-5",
+        "firstname": "Sarah",
+        "lastname": "Schuessler",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 12,
+        "login": "sascha.collinet@hh-web-21-5",
+        "firstname": "Sascha",
+        "lastname": "Collinet",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 13,
+        "login": "stefan.behring@hh-web-21-5",
+        "firstname": "Stefan",
+        "lastname": "Behring",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 14,
+        "login": "suad.umar@hh-web-21-5",
+        "firstname": "Suad",
+        "lastname": "Umar",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    },
+    {
+        "id": 15,
+        "login": "timur.buchberger@hh-web-21-5",
+        "firstname": "Timur",
+        "lastname": "Buchberger",
+        "groups": ["hh-web-21-5"],
+        "password": "1234567890"
+    }
+]

@@ -1,13 +1,13 @@
 import styled from 'styled-components/macro';
 import { useEffect, useState } from 'react';
 import {
-    TextInput,
-    ButtonWithIcon,
-    PasswordInput,
     InputNotice,
+    TextInput,
+    PasswordInput,
+    ButtonWithIcon,
 } from 'components';
 
-export const Login = ({ handleLogin }) => {
+export const Login = ({ onLogin, dataNotFound }) => {
     const [nameFilled, setNameFilled] = useState(false);
     const [nameWrongFormat, setNameWrongFormat] = useState(false);
     const [passwordWrongLength, setPasswordWrongLength] = useState(false);
@@ -25,6 +25,9 @@ export const Login = ({ handleLogin }) => {
         ) {
             setNameFilled(true);
             setNameWrongFormat(false);
+        } else if (input === '') {
+            setNameFilled(false);
+            setNameWrongFormat(false);
         } else {
             setNameFilled(false);
             setNameWrongFormat(true);
@@ -33,22 +36,39 @@ export const Login = ({ handleLogin }) => {
 
     const focusOutPassword = event => {
         const input = event.target.value;
-        const inputIsValid = input.length >= 6;
-        setPasswordFilled(inputIsValid);
-        setPasswordWrongLength(!inputIsValid);
+        if (input === '') {
+            setPasswordFilled(false);
+            setPasswordWrongLength(false);
+        } else if (input >= 6) {
+            setPasswordFilled(true);
+            setPasswordWrongLength(false);
+        } else {
+            setPasswordFilled(false);
+            setPasswordWrongLength(true);
+        }
     };
 
     useEffect(() => {
-        if (nameFilled === true && passwordFilled === true) {
-            setInactive(false);
-        } else {
-            setInactive(true);
-        }
+        setInactive(!(nameFilled && passwordFilled));
     }, [passwordFilled, nameFilled]);
+
+    // useEffect(() => {
+    //     if (nameFilled === true && passwordFilled === true) {
+    //         setInactive(false);
+    //     } else {
+    //         setInactive(true);
+    //     }
+    // }, [passwordFilled, nameFilled]);
 
     return (
         <>
-            <Form onSubmit={handleLogin}>
+            <Form onSubmit={onLogin}>
+                {dataNotFound && (
+                    <InputNotice
+                        errorText="Wir konnten die gesuchte Person nicht finden."
+                        helpText="Bitte überprüfe deine Eingaben."
+                    />
+                )}
                 <TextInput
                     label="Benutzername"
                     name="name"
@@ -75,14 +95,14 @@ export const Login = ({ handleLogin }) => {
                         helpText="Das Passwort muss aus mindestens 6 Zeichen bestehen."
                     />
                 )}
+                <Wrapper>
+                    <ButtonWithIcon
+                        iconSrc="/assets/icons/login.svg"
+                        text="Anmelden"
+                        inactive={inactive}
+                    />
+                </Wrapper>
             </Form>
-            <Wrapper>
-                <ButtonWithIcon
-                    iconSrc="/assets/icons/login.svg"
-                    text="Anmelden"
-                    inactive={inactive}
-                />
-            </Wrapper>
         </>
     );
 };
