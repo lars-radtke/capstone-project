@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import { useState, useEffect } from 'react';
 import { ClassTile } from 'components';
 import classesData from '../../classesData.json';
 

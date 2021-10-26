@@ -19,7 +19,7 @@ export const Dashboard = ({ user, logoutUser }) => {
         }
     });
 
-    const [day, setDay] = useState(() => {
+    const [day] = useState(() => {
         let date = new Date();
         let dy = date.getDay();
         return dy;
@@ -29,17 +29,11 @@ export const Dashboard = ({ user, logoutUser }) => {
         let hrs = date.getHours();
         return hrs;
     });
-    const [minutes, setMinutes] = useState(() => {
-        let date = new Date();
-        let mnts = date.getMinutes();
-        return mnts;
-    });
 
     useEffect(() => {
         setInterval(() => {
             const currentTime = new Date();
             setHours(currentTime.getHours());
-            setMinutes(currentTime.getMinutes());
             if (hours <= 8) {
                 setGreeting('Guten Morgen, ');
             } else if (hours > 8) {
@@ -48,7 +42,7 @@ export const Dashboard = ({ user, logoutUser }) => {
                 setGreeting('Guten Abend, ');
             }
         }, 1000);
-    }, []);
+    });
 
     return (
         <Section>
