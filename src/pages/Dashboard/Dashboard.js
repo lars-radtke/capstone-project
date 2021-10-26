@@ -1,35 +1,64 @@
 import { ButtonWithIcon } from 'components';
+import { ClassOverview } from 'components/ClassOverview';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components/macro';
 
 export const Dashboard = ({ user, logoutUser }) => {
     document.title = 'Dashboard | Student Compass';
     const { firstname } = user;
-    const [greeting, setGreeting] = useState('Hallo ');
+
+    const [greeting, setGreeting] = useState(() => {
+        const currentTime = new Date();
+        const hours = currentTime.getHours();
+        if (hours <= 8) {
+            return 'Guten Morgen, ';
+        } else if (hours > 8) {
+            return 'Hallo ';
+        } else if (hours > 16) {
+            return 'Guten Abend, ';
+        }
+    });
+
+    const [day, setDay] = useState(() => {
+        let date = new Date();
+        let dy = date.getDay();
+        return dy;
+    });
+    const [hours, setHours] = useState(() => {
+        let date = new Date();
+        let hrs = date.getHours();
+        return hrs;
+    });
+    const [minutes, setMinutes] = useState(() => {
+        let date = new Date();
+        let mnts = date.getMinutes();
+        return mnts;
+    });
 
     useEffect(() => {
-        const interval = setInterval(() => {
+        setInterval(() => {
             const currentTime = new Date();
-            const currentHour = currentTime.getHours();
-            if (currentHour <= 8) {
+            setHours(currentTime.getHours());
+            setMinutes(currentTime.getMinutes());
+            if (hours <= 8) {
                 setGreeting('Guten Morgen, ');
-            } else if (currentHour > 8 && currentHour <= 16) {
+            } else if (hours > 8) {
                 setGreeting('Hallo ');
-            } else {
+            } else if (hours > 16) {
                 setGreeting('Guten Abend, ');
             }
         }, 1000);
-        return () => {
-            clearInterval(interval);
-        };
     }, []);
 
     return (
         <Section>
-            <Greeting>
-                {greeting}
-                {firstname}.
-            </Greeting>
+            {greeting !== '' && (
+                <Greeting>
+                    {greeting}
+                    {firstname}.
+                </Greeting>
+            )}
+            <ClassOverview day={day} />
             <Wrapper>
                 <ButtonWithIcon
                     iconSrc="/assets/icons/logout.svg"
@@ -43,7 +72,8 @@ export const Dashboard = ({ user, logoutUser }) => {
 
 const Section = styled.section`
     height: 100%;
-    padding: 50px;
+    padding: 30px;
+    overflow: visible;
 `;
 
 const Greeting = styled.p`
@@ -51,7 +81,7 @@ const Greeting = styled.p`
     font-weight: 600;
     color: var(--black);
     opacity: 0.3;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 `;
 
 const Wrapper = styled.div`
