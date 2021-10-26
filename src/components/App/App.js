@@ -1,6 +1,7 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { Frontpage, Dashboard } from 'pages';
 import { useState } from 'react';
+import { LoadingSpinner } from 'components';
 
 export const App = () => {
     const [user, setUser] = useState(() => {
@@ -37,6 +38,9 @@ export const App = () => {
                 ) : (
                     <Redirect to="/" />
                 )}
+            </Route>
+            <Route exact path="/loading">
+                <LoadingSpinner />
             </Route>
         </Switch>
     );

@@ -2,31 +2,29 @@ import styled from 'styled-components/macro';
 import { ClassTile } from 'components';
 import classesData from '../../classesData.json';
 
-export const ClassOverview = ({ day }) => {
-    const date = classesData.find(course => course.id === day);
+export const ClassOverview = ({ id }) => {
+    const date = classesData.find(course => course.id === id);
     const dayName = date.day;
-
-    const todaysCourse = classesData.find(course => course.id === day);
 
     return (
         <>
-            <P>Dein Plan für heute, {dayName}:</P>
-            <Flexbox>
-                {todaysCourse.courses.map(el => {
+            <Heading>Dein Plan für heute, {dayName}:</Heading>
+            <SwipeContainer>
+                {date.courses.map(el => {
                     return <ClassTile key={el.start} data={el}></ClassTile>;
                 })}
-            </Flexbox>
+            </SwipeContainer>
         </>
     );
 };
 
-const P = styled.p`
+const Heading = styled.p`
     font-size: 16px;
     font-weight: 400;
     color: var(--black);
 `;
 
-const Flexbox = styled.div`
+const SwipeContainer = styled.div`
     width: calc(100% + 60px);
     position: relative;
     left: -30px;

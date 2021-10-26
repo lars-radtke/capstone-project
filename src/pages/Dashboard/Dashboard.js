@@ -19,10 +19,10 @@ export const Dashboard = ({ user, logoutUser }) => {
         }
     });
 
-    const [day] = useState(() => {
+    const [id] = useState(() => {
         let date = new Date();
-        let dy = date.getDay();
-        return dy;
+        let day = date.getDay();
+        return day;
     });
     const [hours, setHours] = useState(() => {
         let date = new Date();
@@ -52,7 +52,7 @@ export const Dashboard = ({ user, logoutUser }) => {
                     {firstname}.
                 </Greeting>
             )}
-            <ClassOverview day={day} />
+            <ClassOverview id={id} />
             <Wrapper>
                 <ButtonWithIcon
                     iconSrc="/assets/icons/logout.svg"

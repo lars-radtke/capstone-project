@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 
 export const ClassTile = ({ data }) => {
-    const timeToString = number => {
+    const convertNumberToTimeString = number => {
         const string = number.toString();
         if (string.length === 3) {
             return string.substring(0, 1) + ':' + string.substring(1, 3);
@@ -10,19 +10,17 @@ export const ClassTile = ({ data }) => {
         }
     };
 
-    let coachesSet = false;
     let coachesArray = data.coaches;
 
-    if (coachesArray) {
-        coachesSet = true;
-    }
+    const coachesSet = data.coaches ? true : false;
 
     return (
         <Tile>
-            <Grid>
+            <ContentGrid>
                 <ClassName>{data.courseName}</ClassName>
                 <Time>
-                    {timeToString(data.start)} – {timeToString(data.end)}
+                    {convertNumberToTimeString(data.start)} {' – '}
+                    {convertNumberToTimeString(data.end)}
                 </Time>
                 <div></div>
                 {coachesSet && (
@@ -32,7 +30,7 @@ export const ClassTile = ({ data }) => {
                         })}
                     </Coaches>
                 )}
-            </Grid>
+            </ContentGrid>
         </Tile>
     );
 };
@@ -49,7 +47,7 @@ const Tile = styled.div`
 
     display: inline-block;
 `;
-const Grid = styled.div`
+const ContentGrid = styled.div`
     text-align: center;
     width: 100%;
     height: 100%;
