@@ -26,10 +26,10 @@ export const Dashboard = ({ user, logoutUser }) => {
 
     return (
         <Section>
-            <p>
+            <Greeting>
                 {greeting}
                 {firstname}.
-            </p>
+            </Greeting>
             <Wrapper>
                 <ButtonWithIcon
                     iconSrc="/assets/icons/logout.svg"
@@ -44,6 +44,14 @@ export const Dashboard = ({ user, logoutUser }) => {
 const Section = styled.section`
     height: 100%;
     padding: 50px;
+`;
+
+const Greeting = styled.p`
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+    opacity: 0.3;
+    margin-bottom: 50px;
 `;
 
 const Wrapper = styled.div`
