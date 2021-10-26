@@ -118,5 +118,21 @@
         "lastname": "Buchberger",
         "groups": ["hh-web-21-5"],
         "password": "1234567890"
+    },
+    {
+        "id": 16,
+        "login": "lene.frei@coach",
+        "firstname": "Lene",
+        "lastname": "Frei",
+        "groups": ["hh-web-21-5", "coaches"],
+        "password": "1234567890"
+    },
+    {
+        "id": 17,
+        "login": "lukas.petry@coach",
+        "firstname": "Lukas",
+        "lastname": "Petry",
+        "groups": ["hh-web-21-5", "coaches"],
+        "password": "1234567890"
     }
 ]
