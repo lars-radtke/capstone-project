@@ -12,7 +12,7 @@ export const InputNotice = ({ errorText, helpText }) => {
 
 const Div = styled.div`
     display: grid;
-    grid-template-columns: 24px auto;
+    grid-template-columns: 24px 1fr;
     gap: 10px;
     align-items: center;
 

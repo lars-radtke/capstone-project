@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "day": "Montag",
+        "courses": [
+            {
+                "courseName": "Daily Sitdown",
+                "start": 930,
+                "end": 959,
+                "coaches": ["Lukas", "Lene"]
+            },
+            { "courseName": "Freies Arbeiten", "start": 1000, "end": 1259 },
+            {
+                "courseName": "Mittagspause",
+                "start": 1300,
+                "end": 1359,
+                "isBreak": true
+            },
+            { "courseName": "Freies Arbeiten", "start": 1400, "end": 1644 },
+            {
+                "courseName": "Abschluss",
+                "start": 1645,
+                "end": 1700,
+                "coaches": ["Lukas", "Lene"]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "day": "Dienstag",
+        "courses": [
+            {
+                "courseName": "Daily Sitdown",
+                "start": 930,
+                "end": 959,
+                "coaches": ["Lukas", "Lene"]
+            },
+            { "courseName": "Freies Arbeiten", "start": 1000, "end": 1259 },
+            {
+                "courseName": "Mittagspause",
+                "start": 1300,
+                "end": 1359,
+                "isBreak": true
+            },
+            { "courseName": "Freies Arbeiten", "start": 1400, "end": 1644 },
+            {
+                "courseName": "Abschluss",
+                "start": 1645,
+                "end": 1700,
+                "coaches": ["Lukas", "Lene"]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "day": "Mittwoch",
+        "courses": [
+            {
+                "courseName": "Daily Sitdown",
+                "start": 930,
+                "end": 959,
+                "coaches": ["Lukas", "Lene"]
+            },
+            { "courseName": "Freies Arbeiten", "start": 1000, "end": 1259 },
+            {
+                "courseName": "Mittagspause",
+                "start": 1300,
+                "end": 1359,
+                "isBreak": true
+            },
+            { "courseName": "Freies Arbeiten", "start": 1400, "end": 1644 },
+            {
+                "courseName": "Abschluss",
+                "start": 1645,
+                "end": 1700,
+                "coaches": ["Lukas", "Lene"]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "day": "Donnerstag",
+        "courses": [
+            {
+                "courseName": "'Wie gehts'-Runde",
+                "start": 930,
+                "end": 959,
+                "coaches": ["Benny", "Nele"]
+            },
+            {
+                "courseName": "Daily Sitdown",
+                "start": 1000,
+                "end": 1029,
+                "coaches": ["Lukas", "Lene"]
+            },
+            { "courseName": "Freies Arbeiten", "start": 1030, "end": 1259 },
+            {
+                "courseName": "Mittagspause",
+                "start": 1300,
+                "end": 1359,
+                "isBreak": true
+            },
+            { "courseName": "Freies Arbeiten", "start": 1400, "end": 1644 },
+            {
+                "courseName": "Abschluss",
+                "start": 1645,
+                "end": 1700,
+                "coaches": ["Lukas", "Lene"]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "day": "Freitag",
+        "courses": [
+            {
+                "courseName": "Daily Sitdown",
+                "start": 930,
+                "end": 959,
+                "coaches": ["Lukas", "Lene"]
+            },
+            { "courseName": "Freies Arbeiten", "start": 1000, "end": 1259 },
+            {
+                "courseName": "Mittagspause",
+                "start": 1300,
+                "end": 1359,
+                "isBreak": true
+            },
+            { "courseName": "Freies Arbeiten", "start": 1400, "end": 1644 },
+            {
+                "courseName": "Abschluss",
+                "start": 1645,
+                "end": 1700,
+                "coaches": ["Lukas", "Lene"]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "day": "Samstag",
+        "courses": []
+    },
+    {
+        "id": 0,
+        "day": "Sonntag",
+        "courses": []
+    }
+]

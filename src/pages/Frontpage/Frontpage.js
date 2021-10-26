@@ -1,5 +1,5 @@
 import { Logo, Login } from 'components';
-import data from '../../data.json';
+import userData from '../../userData.json';
 import styled from 'styled-components/macro';
 import { useState } from 'react';
 
@@ -10,7 +10,7 @@ export const Frontpage = ({ onAuthenticateUser }) => {
         event.preventDefault();
         const { name, password } = event.target.elements;
 
-        const user = data.find(
+        const user = userData.find(
             user =>
                 user.login === name.value && user.password === password.value,
         );

@@ -5,3 +5,5 @@ export * from './Login';
 export * from './TextInput';
 export * from './PasswordInput';
 export * from './InputNotice';
+export * from './ClassOverview';
+export * from './ClassTile';
