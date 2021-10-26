@@ -52,14 +52,6 @@ export const Login = ({ onLogin, dataNotFound }) => {
         setInactive(!(nameFilled && passwordFilled));
     }, [passwordFilled, nameFilled]);
 
-    // useEffect(() => {
-    //     if (nameFilled === true && passwordFilled === true) {
-    //         setInactive(false);
-    //     } else {
-    //         setInactive(true);
-    //     }
-    // }, [passwordFilled, nameFilled]);
-
     return (
         <>
             <Form onSubmit={onLogin}>
@@ -78,7 +70,7 @@ export const Login = ({ onLogin, dataNotFound }) => {
                 {nameWrongFormat && (
                     <InputNotice
                         errorText="Deine Eingabe entspricht nicht dem gültigen Format."
-                        helpText="Beispiel: max(dot)musterschueler(at)klasse"
+                        helpText="Beispiel: max (dot) musterschueler (at) klasse"
                     />
                 )}
                 <PasswordInput
