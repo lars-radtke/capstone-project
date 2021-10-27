@@ -15,17 +15,16 @@ const GlobalStyles = createGlobalStyle`
 		padding: 0;
 		line-height: 1.5;
 		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		scroll-behavior: smooth;
 	}
 
 	body {
 		height: 100vh;
-
-		color: var(--black);
-
-		background-image: linear-gradient(rgb(218,218,218) 0%, rgb(255,255,255) 100%);
+		
+		background-image: linear-gradient(#0077b6, #b9e6ff);
 		background-repeat: no-repeat;
-
-		scroll-behavior: smooth;
+		 overflow: hidden;
+		
 	}
 
 	#root {
@@ -46,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
 		transition: 0.3s;
 
 		background-color: ${({ highlightend }) =>
-            highlightend ? 'var(--red)' : 'var(--grey)'};
+            highlightend ? 'var(--red)' : 'var(--white)'};
 		box-shadow: 0 6px 8px rgba(0,0,0,0.25);
 		transform: translateY(-4px);
 
