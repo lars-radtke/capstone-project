@@ -68,7 +68,6 @@ const OverflowContainer = styled.div`
 `;
 
 const Greeting = styled.p`
-    display: block;
     width: 100%;
     font-size: 24px;
     font-weight: 600;
