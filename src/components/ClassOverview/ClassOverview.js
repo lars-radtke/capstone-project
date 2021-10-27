@@ -1,9 +1,9 @@
 import styled from 'styled-components/macro';
 import { ClassTile } from 'components';
-import classesData from '../../classesData.json';
+import timetable from '../../timetable.json';
 
 export const ClassOverview = ({ day }) => {
-    const date = classesData.find(course => course.id === day);
+    const date = timetable.find(course => course.id === day);
     const dayName = date.day;
 
     return (
