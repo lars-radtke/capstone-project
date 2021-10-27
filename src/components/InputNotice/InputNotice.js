@@ -12,6 +12,7 @@ export const InputNotice = ({ errorText, helpText }) => {
 
 const Div = styled.div`
     display: grid;
+    background-color: #b9e6ff;
     grid-template-columns: 24px 1fr;
     gap: 10px;
     align-items: center;
@@ -28,6 +29,7 @@ const Div = styled.div`
 const ErrorMessage = styled.p`
     font-weight: 500;
     font-size: 18px;
+    color: var(--red);
 `;
 
 const HelpText = styled.p`
@@ -36,4 +38,6 @@ const HelpText = styled.p`
     font-style: italic;
     font-weight: 200;
     font-size: 16px;
+
+    color: var(--red);
 `;

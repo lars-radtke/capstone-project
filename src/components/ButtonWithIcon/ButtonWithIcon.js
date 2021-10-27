@@ -22,6 +22,7 @@ export const ButtonWithIcon = ({
 const Button = styled.button`
     padding: 10px 20px 10px 18px;
     margin-top: 18px;
+    border-radius: 20px;
 
     display: grid;
     grid-template-columns: 24px auto;

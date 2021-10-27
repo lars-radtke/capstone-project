@@ -102,11 +102,17 @@ export const Login = ({ onLogin, dataNotFound }) => {
 const Form = styled.form`
     width: 100%;
     margin-top: 30px;
+    padding: 30px;
+    border-radius: 40px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0)
+    );
+    border: 3px solid var(--white);
 `;
 
 const Wrapper = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 `;
