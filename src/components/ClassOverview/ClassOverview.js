@@ -1,9 +1,9 @@
 import styled from 'styled-components/macro';
 import { ClassTile } from 'components';
-import classesData from '../../classesData.json';
+import timetable from '../../timetable.json';
 
-export const ClassOverview = ({ id }) => {
-    const date = classesData.find(course => course.id === id);
+export const ClassOverview = ({ day }) => {
+    const date = timetable.find(course => course.id === day);
     const dayName = date.day;
 
     return (
@@ -21,13 +21,10 @@ export const ClassOverview = ({ id }) => {
 const Heading = styled.p`
     font-size: 16px;
     font-weight: 400;
-    color: var(--black);
 `;
 
 const SwipeContainer = styled.div`
-    width: calc(100% + 60px);
-    position: relative;
-    left: -30px;
+    width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
@@ -41,7 +38,7 @@ const SwipeContainer = styled.div`
     }
     &::after {
         content: '';
-        width: calc(100% - 260px);
+        width: 20px;
         display: inline-block;
     }
 `;

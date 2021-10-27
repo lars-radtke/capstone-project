@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 
-export const ClassTile = ({ data }) => {
+export const ClassTile = ({ data, index }) => {
     const convertNumberToTimeString = number => {
         const string = number.toString();
         if (string.length === 3) {
@@ -15,7 +15,7 @@ export const ClassTile = ({ data }) => {
     const coachesSet = data.coaches ? true : false;
 
     return (
-        <Tile>
+        <Tile index={index}>
             <ContentGrid>
                 <ClassName>{data.courseName}</ClassName>
                 <Time>
@@ -41,11 +41,19 @@ const Tile = styled.div`
     height: 100px;
     padding: 10px;
     position: sticky;
-    left: 30px;
+    left: ${({ index }) => (index + 1) * 20};
     background-color: white;
-    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
     display: inline-block;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+    :last-of-type {
+        margin-right: 0;
+    }
 `;
 const ContentGrid = styled.div`
     text-align: center;
