@@ -44,8 +44,8 @@ const GlobalStyles = createGlobalStyle`
 
 		transition: 0.3s;
 
-		background-color: ${({ highlightend }) =>
-            highlightend ? 'var(--red)' : 'var(--white)'};
+		background-color: ${({ highlighted }) =>
+            highlighted ? 'var(--red)' : 'var(--white)'};
 		box-shadow: 0 6px 8px rgba(0,0,0,0.25);
 		transform: translateY(-4px);
 

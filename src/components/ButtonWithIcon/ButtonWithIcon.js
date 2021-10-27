@@ -3,16 +3,12 @@ import styled from 'styled-components/macro';
 export const ButtonWithIcon = ({
     iconSrc,
     text,
-    highlightend,
+    highlighted,
     inactive,
     onClick,
 }) => {
     return (
-        <Button
-            highlightend={highlightend}
-            disabled={inactive}
-            onClick={onClick}
-        >
+        <Button highlighted={highlighted} disabled={inactive} onClick={onClick}>
             <img src={iconSrc} alt="" />
             {text}
         </Button>
