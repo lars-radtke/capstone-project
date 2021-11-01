@@ -7,3 +7,7 @@ export * from './PasswordInput';
 export * from './InputNotice';
 export * from './ClassOverview';
 export * from './ClassTile';
+export * from './Separator';
+export * from './LoadingSpinner';
+export * from './DangerZone';
+export * from './HomeworkButton';
