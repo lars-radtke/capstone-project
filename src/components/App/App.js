@@ -12,7 +12,7 @@ export const App = () => {
 
     // This is a custom function, that mocks the setInterval function.
     // As setInterval() does not work in React as you would think, the use of a custom hook was necessary.
-    // It tests for changes every second, but only updates states when a change is detected
+    // It tests for changes in the Date every second but only updates states when an actual change is detected.
     useInterval(() => {
         const newDate = new Date();
         if (newDate.getDay() !== day) {
