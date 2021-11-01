@@ -1,0 +1,125 @@
+{
+    "courses": [
+        {
+            "courseId": 1,
+            "courseNumber": 1,
+            "courseName": "Deutsch",
+            "startHour": 8,
+            "startMinutes": 0,
+            "endHour": 8,
+            "endMinutes": 45,
+            "bgColor": "crimson",
+            "color": "var(--white)",
+            "coaches": ["Fr. Bednorz"]
+        },
+        {
+            "courseId": 2,
+            "courseNumber": 2,
+            "courseName": "Mathematik",
+            "startHour": 8,
+            "startMinutes": 50,
+            "endHour": 9,
+            "endMinutes": 35,
+            "bgColor": "midnightblue",
+            "color": "var(--white)",
+            "coaches": ["Fr. Knuth"]
+        },
+        {
+            "courseId": 3,
+            "courseNumber": 3,
+            "courseName": "Englisch",
+            "startHour": 9,
+            "startMinutes": 50,
+            "endHour": 10,
+            "endMinutes": 35,
+            "bgColor": "cornflowerblue",
+            "color": "var(--white)",
+            "coaches": ["Hr. Apsel"]
+        },
+        {
+            "courseId": 4,
+            "courseNumber": 4,
+            "courseName": "Biologie",
+            "startHour": 10,
+            "startMinutes": 40,
+            "endHour": 11,
+            "endMinutes": 25,
+            "bgColor": "limegreen",
+            "color": "var(--white)",
+            "coaches": ["Hr. Romstöck"]
+        },
+        {
+            "courseId": 5,
+            "courseNumber": 5,
+            "courseName": "Geschichte",
+            "startHour": 11,
+            "startMinutes": 45,
+            "endHour": 12,
+            "endMinutes": 30,
+            "bgColor": "darkorange",
+            "color": "var(--white)",
+            "coaches": ["Hr. Stello"]
+        },
+
+        {
+            "courseId": 6,
+            "courseNumber": 6,
+            "courseName": "Chemie",
+            "startHour": 12,
+            "startMinutes": 35,
+            "endHour": 13,
+            "endMinutes": 20,
+            "bgColor": "hotpink",
+            "color": "var(--white)",
+            "coaches": ["Hr. Asmussen"]
+        },
+        {
+            "courseId": 7,
+            "courseNumber": 7,
+            "courseName": "Physik",
+            "startHour": 13,
+            "startMinutes": 25,
+            "endHour": 14,
+            "endMinutes": 10,
+            "bgColor": "rebeccapurple",
+            "color": "var(--white)",
+            "coaches": ["Hr. Meier auf der Heide"]
+        },
+        {
+            "courseId": 9,
+            "courseNumber": 8,
+            "courseName": "Freistunde",
+            "startHour": 14,
+            "startMinutes": 55,
+            "endHour": 15,
+            "endMinutes": 40,
+            "bgColor": "white",
+            "color": "grey",
+            "coaches": ["-"]
+        },
+        {
+            "courseId": 8,
+            "courseNumber": 9,
+            "courseName": "WiPo",
+            "startHour": 14,
+            "startMinutes": 55,
+            "endHour": 15,
+            "endMinutes": 40,
+            "bgColor": "tan",
+            "color": "var(--white)",
+            "coaches": ["Hr. Goede"]
+        },
+        {
+            "courseId": 8,
+            "courseNumber": 10,
+            "courseName": "WiPo",
+            "startHour": 15,
+            "startMinutes": 45,
+            "endHour": 16,
+            "endMinutes": 30,
+            "bgColor": "tan",
+            "color": "var(--white)",
+            "coaches": ["Hr. Goede"]
+        }
+    ]
+}
