@@ -5,7 +5,7 @@
         "firstname": "Ben",
         "lastname": "Orf",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "firstname": "Danilo",
         "lastname": "Braeuer",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "firstname": "Emilie",
         "lastname": "Lokietz",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "firstname": "Fabian",
         "lastname": "Hanso",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "firstname": "Falk",
         "lastname": "Kreimeier",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "firstname": "Julien",
         "lastname": "Chahine",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "firstname": "Lars",
         "lastname": "Radtke",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "firstname": "Malte",
         "lastname": "Scherdin",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "firstname": "Mareike",
         "lastname": "Boselmann",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "firstname": "Martin",
         "lastname": "Haiss",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "firstname": "Sarah",
         "lastname": "Schuessler",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "firstname": "Sascha",
         "lastname": "Collinet",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "firstname": "Stefan",
         "lastname": "Behring",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "firstname": "Suad",
         "lastname": "Umar",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "firstname": "Timur",
         "lastname": "Buchberger",
         "groups": ["hh-web-21-5"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "firstname": "Lene",
         "lastname": "Frei",
         "groups": ["hh-web-21-5", "coaches"],
-        "password": "1234567890"
+        "password": "123456"
     },
     {
         "id": 17,
@@ -133,6 +133,6 @@
         "firstname": "Lukas",
         "lastname": "Petry",
         "groups": ["hh-web-21-5", "coaches"],
-        "password": "1234567890"
+        "password": "123456"
     }
 ]

@@ -1,0 +1,122 @@
+[
+    {
+        "id": "homework1",
+        "title": "Hausaufgabe 1",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework2",
+        "title": "Hausaufgabe 2",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework3",
+        "title": "Hausaufgabe 3",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework4",
+        "title": "Hausaufgabe 4",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework5",
+        "title": "Hausaufgabe 5",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework6",
+        "title": "Hausaufgabe 6",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework7",
+        "title": "Hausaufgabe 7",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework8",
+        "title": "Hausaufgabe 8",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework9",
+        "title": "Hausaufgabe 9",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "October 1, 21",
+        "done": true
+    },
+    {
+        "id": "homework10",
+        "title": "Hausaufgabe 10",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "November 2, 21",
+        "done": false
+    },
+    {
+        "id": "homework11",
+        "title": "Hausaufgabe 11",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "November 3, 21",
+        "done": false
+    },
+    {
+        "id": "homework12",
+        "title": "Hausaufgabe 12",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "November 4, 21",
+        "done": false
+    },
+    {
+        "id": "homework13",
+        "title": "Hausaufgabe 13",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "November 8, 21",
+        "done": false
+    },
+    {
+        "id": "homework14",
+        "title": "Hausaufgabe 14",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "November 9, 21",
+        "done": false
+    },
+    {
+        "id": "homework15",
+        "title": "Hausaufgabe 15",
+        "text": "Hausaufgaben-Details",
+        "course": "Deutsch",
+        "dueTo": "November 18, 21",
+        "done": false
+    }
+]

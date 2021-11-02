@@ -36,10 +36,10 @@ export const Login = ({ onLogin, dataNotFound }) => {
 
     const focusOutPassword = event => {
         const input = event.target.value;
-        if (input === '') {
+        if (input.length === 0) {
             setPasswordFilled(false);
             setPasswordWrongLength(false);
-        } else if (input >= 6) {
+        } else if (input.length >= 6) {
             setPasswordFilled(true);
             setPasswordWrongLength(false);
         } else {
@@ -54,7 +54,7 @@ export const Login = ({ onLogin, dataNotFound }) => {
 
     return (
         <>
-            <Form onSubmit={onLogin}>
+            <Form id="loginForm" onSubmit={onLogin}>
                 {dataNotFound && (
                     <InputNotice
                         errorText="Wir konnten die gesuchte Person nicht finden."
@@ -87,13 +87,11 @@ export const Login = ({ onLogin, dataNotFound }) => {
                         helpText="Das Passwort muss aus mindestens 6 Zeichen bestehen."
                     />
                 )}
-                <Wrapper>
-                    <ButtonWithIcon
-                        iconSrc="/assets/icons/login.svg"
-                        text="Anmelden"
-                        inactive={inactive}
-                    />
-                </Wrapper>
+                <ButtonWithIcon
+                    iconSrc="/assets/icons/login.svg"
+                    text="Anmelden"
+                    inactive={inactive}
+                />
             </Form>
         </>
     );
@@ -101,18 +99,8 @@ export const Login = ({ onLogin, dataNotFound }) => {
 
 const Form = styled.form`
     width: 100%;
-    margin-top: 30px;
     padding: 30px;
-    border-radius: 40px;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0)
-    );
-    border: 3px solid var(--white);
-`;
-
-const Wrapper = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 `;

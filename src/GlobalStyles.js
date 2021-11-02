@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import './Fonts/Montserrat.css';
+import './src/styles/Fonts/Montserrat.css';
 
 const GlobalStyles = createGlobalStyle`
 	:root {

@@ -1,44 +1,39 @@
 import styled from 'styled-components/macro';
 import { ClassTile } from 'components';
-import timetable from '../../timetable.json';
+import schoolTimetable from 'mockData/schoolTimetable.json';
+import { Separator } from 'components';
 
-export const ClassOverview = ({ day }) => {
-    const date = timetable.find(course => course.id === day);
-    const dayName = date.day;
+export const ClassOverview = () => {
+    const date = schoolTimetable;
 
     return (
         <>
-            <Heading>Dein Plan für heute, {dayName}:</Heading>
+            <Separator text="Stundenplan" />
             <SwipeContainer>
                 {date.courses.map(el => {
-                    return <ClassTile key={el.start} data={el}></ClassTile>;
+                    return (
+                        <ClassTile key={el.courseNumber} data={el}></ClassTile>
+                    );
                 })}
             </SwipeContainer>
         </>
     );
 };
 
-const Heading = styled.p`
-    font-size: 16px;
-    font-weight: 400;
-`;
-
 const SwipeContainer = styled.div`
     width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
-    scroll-snap-type: mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-snap-destination: 0 0;
+    scroll-snap-type: x mandatory;
 
     &::before {
         content: '';
-        width: 20px;
+        width: 20%;
         display: inline-block;
     }
     &::after {
         content: '';
-        width: 20px;
+        width: 20%;
         display: inline-block;
     }
 `;
